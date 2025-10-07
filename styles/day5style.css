@@ -1,0 +1,80 @@
+/* let's have some basic styling for the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* so above rule says: if Arial is not available, use Helvetica,
+       if neither is available, use any sans-serif font */
+    /* let's have whole page a nice light blue background color */
+    background-color: rgb(207, 229, 237);
+}
+
+/* let's have round border around all box class elements */
+.box {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px; /* space between content and border */
+    margin: 10px;  /* space between border and other elements */
+}
+
+/* let's have less margin and padding for box2 class elements */
+.box2 {
+    border: 3px solid rgb(123, 25, 25);
+    border-radius: 5px;
+    background-color: rgb(241, 231, 231);
+    padding: 5px; /* space between content and border */
+    margin: 5px;  /* space between border and other elements */
+}
+
+/* let's have specific width and height for box3 class elements */
+.box3 {
+    width: 400px;
+    height: 100px;
+}
+
+/* let's have box4 take 50% of width and 50% of height of its parent */
+.box4 {
+    width: 50%;
+    height: 30px;
+}
+
+/* let's have a nice bold style for class note elements */
+.note {
+    font-weight: bold;
+    color: red;
+}
+
+/* let's make class relative-box elements positioned relative */
+.relative-box {
+    position: relative;
+    left: 20px; /* move 20px to the right from normal position */
+    top: 10px;  /* move 10px down from normal position */
+    border: 2px dashed blue;
+    padding: 5px;
+    margin: 5px;
+    width: 50%;
+}
+
+/* let's make class absolute-box elements positioned absolute */
+.absolute-box {
+    position: absolute;
+    left: 300px; /* 300px from the left edge of the nearest positioned ancestor */
+    top: 200px;  /* 200px from the top edge of the nearest positioned ancestor */
+    border: 2px dashed green;
+    padding: 5px;
+    margin: 5px;
+    width: 50%;
+}
+
+/* let's make class fixed-box elements positioned fixed to the bottom right */
+.fixed-box {
+    position: fixed;
+    bottom: 20px; /* 20px from the bottom of the viewport */
+    right: 30px;  /* 30px from the right of the viewport */
+    border: 2px dashed purple;
+    padding: 5px;
+    margin: 5px;
+    background-color: lightyellow;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
