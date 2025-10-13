@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="styles/day6style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6 - CSS Media Queries, Flexbox</title>
+</head>
+<body>
+<header id="header_id">
+    <nav>
+            <a href="index.html">Home</a> |
+            <a href="day5.html">Day 5 - CSS Box Model, Basic Positioning</a> |
+            <a href="day4.html">Day 4 - CSS Basics</a> |
+            <a href="day3.html">Day 3 - More HTML</a> |
+            <a href="day2.html">Day 2 - HTML Basics</a> |
+            <a href="#footer_id">Footer</a>
+    </nav>
+</header>
+<h1>Day 6 - CSS Media Queries, Flexbox</h1>
+<h1>Day 6 - CSS Media Queries, Flexbox</h1>
+<main>
+        <section>
+            <h2>CSS Media Queries</h2>
+            <p>Media queries allow you to apply different styles based on the device's characteristics, such as screen width. This is essential for responsive design.</p>
+            <pre><code>@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }   
+}</code></pre>
+
+            <p>In the example above, the background color of the body will change to light blue when the screen width is 600px or less.</p>
+        <h3> Resources on Media Queries</h3>
+        <ul>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries">MDN Web Docs - Using Media Queries</a></li>
+            <li><a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/">CSS Tricks - Media Queries for Standard Devices</a></li>
+        </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>CSS Flexbox</h2>
+            <p>Flexbox is a layout model that allows you to design complex layouts easily and efficiently. It provides a way to align and distribute space among items in a container.</p>
+            <pre><code>.container {
+    display: flex;
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+    height: 100vh; /* Full viewport height */
+}
+</code></pre>
+<h3> Resources on Flexbox</h3>
+<ul>
+    <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">A Complete Guide to Flexbox - CSS Tricks</a></li>
+    <li><a href="https://flexboxfroggy.com/">Flexbox Froggy - A game to learn Flexbox</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">MDN Web Docs - Basic Concepts of Flexbox</a></li>
+</ul>
+<h3>Example Boxes to play around</h3>
+<div class="container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+    <div class="box">Box 4</div>
+    <div class="box">Box 5</div>
+</div>
+
+
+
+        </section>
+</main>
+<footer id="footer_id">
+    <hr>
+    <nav>
+            <a href="index.html">Home</a> |
+            <a href="day5.html">Day 5 - CSS Box Model, Basic Positioning</a> |
+            <a href="day4.html">Day 4 - CSS Basics</a> |
+            <a href="day3.html">Day 3 - More HTML</a> |
+            <a href="day2.html">Day 2 - HTML Basics</a> |
+            <a href="#header_id">Top</a>
+    </nav>
+</footer>   
+</body>
+</html>
