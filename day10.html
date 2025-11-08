@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10 - Javascript Comparison, Logical Operators, Branching</title>
+    <link rel="stylesheet" type="text/css" href="styles/common.css">
+    <script src="scripts/day10.js" defer></script>
+    <style>
+        .avoid {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<header id="header_id">
+    <nav>
+            <a href="index.html">Home</a> |
+            <a href="day9.html">Day 9 - Javascript Basics</a> |
+            <a href="day8.html">Day 8 - CSS Effects, Transformations, Animations - External Libraries</a> |
+            <a href="day7.html">Day 7 - CSS Grid, Pseudo Classes</a> |
+            <a href="day6.html">Day 6 - CSS Media Queries, Flexbox</a> |
+            <a href="day5.html">Day 5 - CSS Box Model, Basic Positioning</a> |
+            <a href="day4.html">Day 4 - CSS Basics</a> |
+            <a href="day3.html">Day 3 - More HTML</a> |
+            <a href="day2.html">Day 2 - HTML Basics</a> |
+            <a href="#footer_id">Footer</a>
+    </nav>
+</header>
+<main>
+<h1>Day 10 - Javascript Comparison, Logical Operators, Branching</h1>
+<h1>Comparison Operators</h1>
+<ul>
+    <li>Equal to: ==</li>
+    <li>Strict equal to: ===</li>
+    <li>Not equal to: !=</li>
+    <li>Strict not equal to: !==</li>
+    <li>Greater than: &gt;</li>
+    <li>Less than: &lt;</li>
+    <li>Greater than or equal to: &gt;=</li>
+    <li>Less than or equal to: &lt;=</li>
+</ul>
+<p>In JavaScript, comparison operators are used to compare two values. The result of a comparison is a boolean value (true or false).</p>
+<p>Javascript likes to coerce types when comparing values. Avoid using == and != for comparison.</p>
+<h3>Examples:</h3>
+<ul>
+    <li class="avoid">5 == '5' // true</li>
+    <li>5 === '5' // false</li>
+    <li class="avoid">5 != 4 // true</li>
+    <li>5 !== '5' // true</li>
+    <li>`5 & 4` // true</li>
+    <li>`5 &lt; 6` // true</li>
+    <li>`5 &gt;= 5` // true</li>
+    <li>`5 &lt;= 4` // false</li>
+</ul>
+<h3>Resources on Comparison Operators</h3>
+<ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#relational_operators">MDN Web Docs - Comparison Operators</a></li>
+    <li><a href="https://www.w3schools.com/js/js_comparisons.asp">W3Schools - JavaScript Comparisons</a></li>
+    <li><a href="https://javascript.info/comparison">JavaScript.info - Comparison</a></li>
+</ul>
+<h2>Logical Operators</h2>
+<ul>
+    <li>Logical AND: &&</li>
+    <li>Logical OR: ||</li>
+    <li>Logical NOT: !</li>
+</ul>
+<p>Logical operators are used to combine multiple boolean expressions or values.</p>
+<h3>Examples:</h3>
+<ul>
+    <li>(5 &gt; 4) && (6 &gt; 5) // true</li>
+    <li>(5 &gt; 4) || (6 &lt; 5) // true</li>
+    <li>!(5 &gt; 4) // false</li>  
+</ul>
+<h3>Resources on Logical Operators</h3>
+<ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#binary_logical_operators">MDN Web Docs - Logical Operators</a></li>
+    <li><a href="https://javascript.info/logical-operators">JavaScript.info - Logical Operators</a></li>
+</ul>
+<h3>Links Boolean Algebra</h3>
+<ul>
+    <li><a href="https://en.wikipedia.org/wiki/Boolean_algebra">Wikipedia - Boolean Algebra</a></li>
+    <!-- <li><a href="https://www.khanacademy.org/computing/computer-science/cryptography/boolean-algebra/a/boolean-algebra-intro">Khan Academy - Boolean Algebra</a></li> -->
+</ul>
+<h2>Branching</h2>
+<p>Branching allows you to execute different code paths based on certain conditions. In JavaScript, this is typically done using if-else statements.</p>
+<p>It is like that poem by Robert Frost "The Road Not Taken" where he describes making choices and the paths we take in life. We can not take BOTH paths!</p>
+<a href="https://www.poetryfoundation.org/poems/44272/the-road-not-taken">The Road Not Taken</a>
+<h3>Examples:</h3>
+<ul>
+    <li>if (condition) { // code to execute if condition is true }</li>
+    <li>else { // code to execute if condition is false }</li>
+</ul>
+<h3>Example code</h3>
+<pre><code>
+console.log("We can also have if-else if-else structures, ORDER IS IMPORTANT!:");
+console.log("Again only one of the blocks will execute:");
+a = 15;
+b = 15;
+if (a > b) {
+    console.log("a is greater than b");
+    console.log(`a is ${a}, b is ${b}`); //FIXME this line is repeated in each block
+} else if (a === b) {
+    console.log("a is equal to b");
+    console.log(`a is ${a}, b is ${b}`);
+} else {
+    console.log("a is less than b");
+    console.log(`a is ${a}, b is ${b}`);
+}
+//TODO move the repeated line out of the blocks
+</code></pre>
+<h3>Resources on Branching</h3>
+<ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling#if...else_statement">MDN Web Docs - if...else statement</a></li>
+    <li><a href="https://javascript.info/ifelse">JavaScript.info - if...else</a></li>
+</ul>
+</main>
+<footer id="footer_id">
+    <hr>
+    <p>&copy; 2025 <a href="https://www.rtu.lv">RTU</a> Digital  Humanities DE0824</p>
+    <nav>
+            <a href="index.html">Home</a> |
+            <a href="day9.html">Day 9 - Javascript Basics</a> |
+            <a href="day8.html">Day 8 - CSS Effects, Transformations, Animations - External Libraries</a> |
+            <a href="day7.html">Day 7 - CSS Grid, Pseudo Classes</a> |
+            <a href="day6.html">Day 6 - CSS Media Queries, Flexbox</a> |
+            <a href="day5.html">Day 5 - CSS Box Model, Basic Positioning</a> |
+            <a href="day4.html">Day 4 - CSS Basics</a> |
+            <a href="day3.html">Day 3 - More HTML</a> |
+            <a href="day2.html">Day 2 - HTML Basics</a> |
+            <a href="#header_id">Top</a>
+    </nav>
+</footer> 
+</body>
+</html>
