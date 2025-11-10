@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 11 - Switch Statement, While and For Loops</title>
+    <link rel="stylesheet" type="text/css" href="styles/common.css">
+    <script src="scripts/day11.js" defer></script>
+</head>
+<body>
+<header id="header_id">
+    <nav>
+            <a href="index.html">Home</a> |
+            <a href="day10.html">Day 10 - Javascript Comparison, Logical Operators, Branching</a> |
+            <a href="day9.html">Day 9 - Javascript Basics</a> |
+            <a href="day8.html">Day 8 - CSS Effects, Transformations, Animations - External Libraries</a> |
+            <a href="day7.html">Day 7 - CSS Grid, Pseudo Classes</a> |
+            <a href="day6.html">Day 6 - CSS Media Queries, Flexbox</a> |
+            <a href="day5.html">Day 5 - CSS Box Model, Basic Positioning</a> |
+            <a href="day4.html">Day 4 - CSS Basics</a> |
+            <a href="day3.html">Day 3 - More HTML</a> |
+            <a href="day2.html">Day 2 - HTML Basics</a> |
+            <a href="#footer_id">Footer</a>
+    </nav>
+</header>
+<main>
+<h1>Day 11 - Switch Statement, While and For Loops</h1>
+<h2>Switch Statement</h2>
+<p>The switch statement is used to perform different actions based on different conditions. It is an alternative to using multiple if...else statements when you need to compare the same variable to different values.</p>
+<h3>Syntax</h3>
+<pre>switch (expression) {
+    case value1:
+        // code to be executed if expression === value1
+        break;
+    case value2:
+        // code to be executed if expression === value2
+        break;
+    ...
+    default:
+        // code to be executed if expression doesn't match any case
+}</pre>
+<div id="switch_example">If you see this Javascript did not run properly..</div>
+<div id="another_switch_example">Again placeholder</div>
+<div id="yet_another_switch_example">blank</div>
+<h3>Resources on switch</h3>
+<ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch">MDN Web Docs - switch</a></li>
+    <li><a href="https://www.w3schools.com/js/js_switch.asp">W3Schools - JavaScript Switch Statement</a></li>
+</ul>
+<hr>
+<h2>While Loops</h2>
+<p>A while loop repeatedly executes a block of code as long as a specified condition is true.</p>
+<h3>Syntax:</h3>
+<pre>
+while (condition) {
+    // code to be executed
+}
+</pre>
+<div id="while_example">More content for loops follows...</div>
+<h3>Resources on while loops</h3>
+<ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while">MDN Web Docs - while</a></li>
+    <li><a href="https://www.w3schools.com/js/js_loop_while.asp">W3Schools - JavaScript While Loop</a></li>
+    <li><a href="https://javascript.info/while-for">JavaScript.info - While and For Loops</a></li>
+</ul>
+<h2>Do While Loops</h2>
+<p>A do...while loop is similar to a while loop, but it guarantees that the code block will be executed at least once before checking the condition.</p>
+<h3>Syntax:</h3>
+<pre>
+do {
+    // code to be executed
+} while (condition);
+</pre>
+<div id="do_while_example">Placeholder for do while example</div>
+<h3>Resources on do while loops</h3>
+<ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/do...while">MDN Web Docs - do...while</a></li>
+    <li><a href="https://javascript.info/while-for#do-while">JavaScript.info - Do...While Loop</a></li>
+</ul>
+<hr>
+<h2>For Loops</h2>
+<p>A for loop is used to repeat a block of code a specific number of times. 
+    It consists of three main parts: initialization, condition, and increment/decrement.</p>
+<h3>Syntax:</h3>
+<pre>
+for (initialization; condition; increment/decrement) {
+    // code to be executed
+}
+</pre>
+<div id="for_example">Placeholder for for loop example</div>
+<h3>Resources on for loops</h3>
+<ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for">MDN Web Docs - for</a></li>
+    <li><a href="https://www.w3schools.com/js/js_loop_for.asp">W3Schools - JavaScript For Loop</a></li>
+    <li><a href="https://javascript.info/while-for#the-for-loop">JavaScript.info - For Loop</a></li>
+</ul>
+<h2>Break and continue in loops</h2>
+<p>The break statement is used to exit a loop prematurely, while the continue statement skips the current iteration and moves to the next one.</p> 
+<div id="break_example">break placeholder</div>
+<div id="continue_example">continue placeholder</div>
+<h3>Resources on break and continue</h3>
+<ul>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/break">MDN Web Docs - break</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/continue">MDN Web Docs - continue</a></li>
+</ul>
+<h2>Conclusion on Loops</h2>
+<p>Loops are essential for automating repetitive tasks in programming. Understanding how to use different types of loops effectively will enhance your coding skills and efficiency.</p>
+<h3>Philosophy on what loop to use</h3>
+<p>Use for loops when the number of iterations is <strong>known</strong> beforehand.</p>
+<p>Use while loops when the number of iterations is uncertain and depends on a condition.</p>   
+<p>Use do...while loops when you need to ensure that the code block is executed at least once.</p> 
+<h3>Use of loops in web development</h3>
+<p>Loops are commonly used in web development for tasks such as iterating over arrays of data, generating dynamic content, and handling user interactions.</p>
+<p>Simple example would be changing colors on rows of a table dynamically.</p>
+</main>
+<footer id="footer_id">
+    <hr>
+    <p>&copy; 2025 <a href="https://www.rtu.lv">RTU</a> Digital  Humanities DE0824</p>
+    <nav>
+            <a href="index.html">Home</a> |
+            <a href="day10.html">Day 10 - Javascript Comparison, Logical Operators, Branching</a> |
+            <a href="day9.html">Day 9 - Javascript Basics</a> |
+            <a href="day8.html">Day 8 - CSS Effects, Transformations, Animations - External Libraries</a> |
+            <a href="day7.html">Day 7 - CSS Grid, Pseudo Classes</a> |
+            <a href="day6.html">Day 6 - CSS Media Queries, Flexbox</a> |
+            <a href="day5.html">Day 5 - CSS Box Model, Basic Positioning</a> |
+            <a href="day4.html">Day 4 - CSS Basics</a> |
+            <a href="day3.html">Day 3 - More HTML</a> |
+            <a href="day2.html">Day 2 - HTML Basics</a> |
+            <a href="#header_id">Top</a>
+    </nav>
+    <p id="footer_text"></p>
+</footer> 
+</body>
+</html>
