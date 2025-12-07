@@ -67,6 +67,24 @@ for (let i = 0; i < fruits.length; i++) {
     }
 }
 
+function addFruit(item, fruitArray, domId) {
+    fruitArray.push(item);
+    console.log("Added new fruit: " + item);
+    const listElement = document.getElementById(domId);
+    if (listElement) {
+        const listItem = document.createElement("li");
+        listItem.textContent = item;
+        if ((fruitArray.length - 1) % 2 === 0) {
+            listItem.classList.add("even");
+        } else {
+            listItem.classList.add("odd");
+        }
+        listElement.appendChild(listItem);
+    } else {
+        console.log("List element with ID " + domId + " not found.");
+    }
+}
+
 const itemInput = document.getElementById("item_input");
 if (itemInput) {
     itemInput.addEventListener("keydown", function(event) {
