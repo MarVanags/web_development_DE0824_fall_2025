@@ -5,7 +5,7 @@ let fruits = ["Apple", "Banana", "Cherry"];
 console.log("Number of fruits: " + fruits.length);
 console.log(fruits[0]);
 
-console.push("Date");
+fruits.push("Date");
 console.log("After adding Date, Number of fruits: " + fruits.length);
 
 console.log("Last fruit is: " + fruits[fruits.length - 1]);
@@ -112,6 +112,7 @@ if (deleteLastButton) {
         }
     });
 }
+
 
 const clearEverythingButton = document.getElementById("clear_everything");
 if (clearEverythingButton) {
