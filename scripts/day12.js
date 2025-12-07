@@ -11,7 +11,7 @@ console.log(greet("Alice"));
 
 console.log(greet("Bob"));
 
-const greetingForCharlie = greet(Charlie);
+const greetingForCharlie = greet("Charlie");
 console.log(greetingForCharlie);
 
 function printGreet(name) {
