@@ -7,9 +7,11 @@ function greet(name) {
     return "Hello, " + name + "!";
 }
 
-console.log(greet(Alice));
+const greetingForAlice = greet(Alice);
+console.log(greetingForAlice);
 
-console.log(greet(Bob));
+const greetingForBob = greet(Bob);
+console.log(greetingForBob);
 
 const greetingForCharlie = greet(Charlie);
 console.log(greetingForCharlie);
